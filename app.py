@@ -18,7 +18,7 @@ JOBS = [
     'id':3,
     'Title':'Data Analyst',
     'Location': 'New York, USA',
-    'Salary': 'USD 100,000'
+    'Salary': 'USD 120,000'
   }
 ]
 
@@ -26,7 +26,7 @@ JOBS = [
 def hello_mayank():
     return render_template('home.html', 
                           jobs = JOBS,
-                          company_name = "Chukandar" )
+                          company_name = "MJ Inc" )
 
 @app.route("/api/jobs")
 def list_jobs():
